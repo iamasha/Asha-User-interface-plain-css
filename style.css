@@ -9,13 +9,15 @@ body{
     margin-top: 0px;
     padding-top: 0px;
     position: fixed;
-    left: 0;
+    left: -200px;
     top: 0;
     width: 305px;
     height: 100%;
-    transition: 0.5s;
-    transition-property: left;
+    transition: all 500ms linear;
 
+}
+.sidebar .active{
+    left: 0px;
 }
  .sidebar-min h1{
     color:#fff;
@@ -69,7 +71,18 @@ body{
     padding-top: 20px;
     margin-top: 5px;
 }
-
+.sidebar .toggle-btn{
+    position: absolute;
+    padding-left: 310px;
+    top: 10px;
+}
+.sidebar .toggle-btn span{
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: #0B1117;
+    margin: 2px 0px;
+}
  .search{
     width: 100%;
     height: 100%;
@@ -103,8 +116,8 @@ body{
     background:crimson;
     text-decoration: none;
     float: right; 
-    margin-top: -30px;
-    margin-right: 20px;
+    margin-top: 2px;
+    margin-right: 10px;
     font-size: 15px;
     font-weight: 600;
     color: #fff;
@@ -151,6 +164,46 @@ body{
     vertical-align: auto;
     padding-left: 10px;
     float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    /* color: #555;; */
+}
+.main-content .head{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #445;
+}
+header{
+    display: flex;
+    justify-content: top;
+    padding-top: 5px;
+    padding: 5px;
+    color: #444;
+    padding-left: 25px;
+    
+}
+
+
+.search-wrapper{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 30px;
+    width: 90%;
+    overflow-x: hidden;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+.search-wrapper span{
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+
+}
+.search-wrapper input{
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    font-size: 15px;
 }
 
 .min-header{
@@ -177,22 +230,34 @@ body{
 .min-header li{
     margin-top: 20px;
 }
-.min-header #custom{
-    margin-left: 10px;
+#custom{
+    margin-left: 40px;
     background-color:Transparent;
     border:  1px solid grey;
     border-radius: 5px;
     width: 15%;
     font-size: 15px;
 }
-.min-header #custom2{
-    margin-left: 10px;
+#custom:hover{
+    cursor: pointer;
+}
+#custom2{
+    margin-left: 0px;
     background-color:Transparent;
     border-radius: 5px;
     border:  1px solid grey;
     width: 25%;
     font-size: 15px;
 }
+#custom2:hover{
+    cursor: pointer;
+}
+.lower-content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
 h5{
     font-size: 20px;
 }
@@ -220,6 +285,7 @@ h5{
 }
 .user1{
     margin-top: -35px;
+    color: #333;
 }
 .user1 h7{
     margin-left: 20px;
@@ -268,6 +334,7 @@ h5{
 .user-wrapper1{
     padding-left: 10px;
     padding-top: 20px;
+    color: #333;
 }
 .user-wrapper1 img{
     float: left;
@@ -340,6 +407,8 @@ h5{
     float: right;
     padding-top: 20px;
     font-size: 15px;
+    color: #444;
+    
     /* border: 1px solid; */
 
 }
@@ -364,6 +433,7 @@ h5{
  }
 .aside .user-wrapper{
     margin-top: 20px;
+    color: #333;
 }
 h4{
     padding-top: 40px;
@@ -397,13 +467,29 @@ h4{
     border:  1px solid grey;
     text-align: center;
 }
-.tag #but1 i{
+#but1 i{
     color: red;
     border-radius: 10px;
     text-align: center;
 }
-.tag #but2 i{
+#but2 i{
     color: blue
+}
+#but3{
+    color: #333;
+
+}
+#but4{
+    color: #333;
+
+}
+#but3:hover{
+    cursor: pointer;
+    color: #333;
+}
+#but4:hover{
+    cursor: pointer;
+    color: #333;
 }
 .right-side-menu #dotted{
     color: grey;

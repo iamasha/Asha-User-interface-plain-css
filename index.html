@@ -8,6 +8,13 @@
 </head>
 <body>
     <div class="sidebar">
+        <div class="toggle-btn" onclick="togglesidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
         <div class="sidebar-min">
             <h1><i class="fas fa-arrows-alt"></i>Workflow</h1>
         </div>
@@ -24,39 +31,39 @@
             <a href="#" id="proj"><span>Marketing Site Redesign</span></a>
             <a href="#" id="proj"><span>Customer Portal</span></a>
         </div>
-       
-    </div>
-    <div>
-        <div class="search">
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="Search" id="search-btn"/>
-        </div>
-        
-        <div>
-            <a href="#" class="Create_btn">Create</a>
-        </div>
     </div>
     
     <div class="main-content">
+        
+        <header>
+                <div class="search-wrapper">
+                    <span class="las la-search"></span>
+                    <input type="search" placeholder="search" />
+
+                </div>
+                <div>
+                    <a href="#" class="Create_btn">Create</a>
+                </div>
+        </header>
         <div class="min-header">
-            <h2>
+            <h2 class="head">
                 ARIA attribute misspelled
-                  <button type="button" class="btn btn-outline-dark" id="custom">
-                <i class="fas fa-pencil-alt" style="font-size: 0.7rem;"></i> Edit</button>
-                <button type="button" class="btn btn-outline-dark" id="custom2">
-                    <i class="fas fa-bell" style="font-size: 0.7rem;"></i> Subscribe</button>
+                  <button type="button" class="btn btn-outline-dark head" id="custom">
+                <i class="fas fa-pencil-alt head" style="font-size: 0.7rem;"></i> Edit</button>
+                <button type="button" class="btn btn-outline-dark head" id="custom2">
+                    <i class="fas fa-bell head" style="font-size: 0.7rem;"></i> Subscribe</button>
              
             </h2> 
           
-            <span>#400 opened by </span><b>Hilary Many</b> <span>in</span> <b>Customer portal</b>
+            <span class="head">#400 opened by </span><b class="head">Hilary Many</b> <span class="head">in</span> <b class="head">Customer portal</b>
                
               <hr>  
 
-            <p>
+            <p class="head">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum dolor amet deserunt a nulla minima omnis ducimus nesciunt ullam iusto.
             </p>
 
-            <ul>
+            <ul class="head">
                 <li>
                     on the other hand, we denounce with righteous indignation and dislike men who are Lorem ipsum dolor sit Lorem ipsum dolor sit.
                 </li>
@@ -72,7 +79,7 @@
             </ul>
            
         </div>
-        <div>
+        <div class="lower-content">
             <h5>Activity</h5>
             <hr>
             <div class="user-wrapper">
@@ -85,23 +92,23 @@
                
                     <small>Commented 6d ago</small>
                    
-                    <p>
+                    <p class="head">
                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                    </p>
                </div>
                </div>
             <div class="another-user">
                 <i class="fas fa-user-circle"></i>
-                <span><b>Hilary Mahya</b> assigned <b>Kristin Watson</b> 2d ago.</span>
+                <span class="head"><b class="head">Hilary Mahya</b> assigned <b class="head">Kristin Watson</b> 2d ago.</span>
             </div> 
 
         <div class="another-user1">
             <i class="fas fa-tag"></i>
-            <span><b>Mahya added tags</b> 
+            <span class="head"><b>Mahya added tags  </b> 
             <button type="button" id="but3">
-            <i class="fas fa-circle" style="font-size: 5px;"></i> Bug</button>
+            <i class="fas fa-circle" style="font-size: 5px;"></i> Bug </button>
             <button type="button" id="but4">
-            <i class="fas fa-circle" style="font-size: 5px;"></i> Accessibility</button>
+            <i class="fas fa-circle" style="font-size: 5px;"></i> Accessibility </button>
             6h ago.</span>
         </div> 
 
@@ -116,9 +123,9 @@
            
                 <small>Commented 2h ago</small>
                
-                <p>
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
-                   sed do eiusmod tempor incididunt ut labore et dolore magna <br>
+                <p class="head">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna
                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                </p>
            </div>
@@ -168,6 +175,7 @@
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
 
